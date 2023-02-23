@@ -1,0 +1,40 @@
+{
+  "name": "matchboxdesigngroup/matchbox-fire-protection",
+  "description": "The Matchbox Fire Protection plugin configures WordPress to better protect our clients' sites.",
+  "minimum-stability": "dev",
+  "type": "wordpress-plugin",
+  "keywords": [
+    "wordpress",
+    "matchbox"
+  ],
+  "homepage": "https://github.com/matchboxdesigngroup/matchbox-fire-protection",
+  "license": ["GPL-2.0-or-later"],
+  "authors": [
+    {
+      "name": "Matchbox",
+      "homepage": "https://matchboxdesigngroup.com/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MatchboxFireProtection\\": "./includes/classes/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/matchboxdesigngroup/matchbox-fire-protection/issues",
+    "source": "https://github.com/matchboxdesigngroup/matchbox-fire-protection"
+  },
+  "require": {
+    "yahnis-elsts/plugin-update-checker": "4.13",
+    "bjeavons/zxcvbn-php": "^1.0"
+  },
+  "require-dev": {
+    "10up/phpcs-composer": "dev-master",
+    "10up/wpacceptance": "dev-master",
+    "squizlabs/php_codesniffer": "3.*"
+  },
+  "scripts": {
+    "lint": "phpcs .",
+    "lint-fix": "phpcbf ."
+  }
+}

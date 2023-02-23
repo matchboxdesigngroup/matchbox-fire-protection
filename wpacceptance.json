@@ -1,0 +1,23 @@
+{
+    "name": "matchbox-fire-protection",
+    "exclude": [
+      "node_modules"
+    ],
+    "tests": [
+        "./tests/wpa/*.php"
+    ],
+    "enforce_clean_db": false,
+    "project_path": "%WP_ROOT%/wp-content/plugins/matchbox-fire-protection",
+    "environment_instructions": [
+      [
+        "install wordpress where version is 4.9.10 and url is http://matchbox-fire-protection.test",
+        "activate plugin where name is matchbox-fire-protection",
+        "install theme where name is twentyseventeen"
+      ],
+      [
+        "install wordpress where version is 5.3 and url is http://matchbox-fire-protection.test",
+        "activate plugin where name is matchbox-fire-protection",
+        "install theme where name is twentynineteen"
+      ]
+    ]
+}
